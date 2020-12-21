@@ -1,0 +1,12 @@
+<div class="profile-avatar" (click)='openDialog()'>
+
+  <div *ngIf='this.avatar.url && this.showDefaultIcon===false' >
+    <img [src]='this.avatar.url' class="profile-avatar-image">
+
+  </div>
+  <div *ngIf='showDefaultIcon===true'>
+    <img  src="https://i1.sndcdn.com/avatars-000437232558-yuo0mv-t500x500.jpg"
+     class="profile-avatar-image" (click)='openDialog()'>
+  </div>
+
+</div>

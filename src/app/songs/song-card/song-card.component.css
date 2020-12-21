@@ -1,0 +1,46 @@
+.song-card{
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  border-radius: 5px;
+  border: 3px solid #4169E1;
+  flex-direction: column;
+  box-shadow: 0 0 10px #6495ED;
+  width: 25vh;
+  height: 25vh;
+  flex-basis: auto;
+}
+
+.song-card-body{
+  display: flex;
+  height: 80%;
+}
+
+.song-card-info{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+
+.song-card-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.song-card-song-name{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid #4169E1;
+
+}
+
+.song-card-text{
+  font-size: 16px;
+  padding: 3%;
+  color: black;
+}
+
+.song-card-song-detail-info{
+  display: flex;
+}

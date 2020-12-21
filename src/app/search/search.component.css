@@ -1,0 +1,54 @@
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #4169E1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #6495ED;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.main{
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 2px solid black;
+  display: flex;
+  height: 100%;
+  border: 3px solid #4169E1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #6495ED;
+  background-color: white;
+}
+
+
+.main-text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vh;
+}
+
+p{
+  border: 2px solid red;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.song-body{
+  width: 100vh;
+  height: 20vh;
+  border: 3px solid #4169E1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #6495ED;
+}
+
+.song-body-c{
+  width: 100vh;
+  border: 2px solid green;
+}

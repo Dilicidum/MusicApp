@@ -1,0 +1,64 @@
+<section class="upload-form">
+
+<form class="upload-form-body" [formGroup]='uploadSongForm' (ngSubmit)='onSubmit()'>
+  <div class="upload-form-body-first">
+    <div class="upload-form-element">
+      <span class="upload-form-element-text">Song name:</span>
+      <input type="text" formControlName='songName'  class="upload-form-element-input" placeholder="">
+      <app-validate-helper class="error-message" [name]='uploadSongForm.controls["songName"]'></app-validate-helper>
+    </div>
+
+    <div class="upload-form-element">
+      <span class="upload-form-element-text">Artist:</span>
+      <input type="text" formControlName='artist' class="upload-form-element-input" placeholder="">
+      <app-validate-helper class="error-message" [name]='uploadSongForm.controls["artist"]'></app-validate-helper>
+    </div>
+
+    <div class="upload-form-element">
+      <span class="upload-form-element-text">Year:</span>
+      <input type="text" formControlName='year' class="upload-form-element-input" placeholder="">
+      <app-validate-helper class="error-message" [name]='uploadSongForm.controls["year"]'></app-validate-helper>
+    </div>
+
+    <div class="upload-form-element-1">
+      <div class="upload-form-element-first">
+        <span class="upload-form-element-text">Janre:</span>
+        <div class="">
+          <select [value]='genresCanBeChoosen[0]' formControlName='genres' class="upload-form-element-input">
+            <option> Choose genre</option>
+            <option *ngFor='let genre of genresCanBeChoosen' class="upload-form-element-input-text">
+              {{genre.name}}
+            </option>
+          </select>
+          <button type="button" class="upload-form-submit-btn" (click)='addDynamicGenre($event)'>Add genre</button>
+        </div>
+      </div>
+
+      <div class="upload-form-element-dynamic">
+        <template #genreDynamic></template>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="upload-form-body-second">
+    <div class="upload-form-element">
+      <span class="upload-form-element-text-second">Image:</span>
+      <input type="file" formControlName='imageFile' (change)='handleImageFile($event.target.files)'
+      accept="image/x-png,image/gif,image/jpeg" class="upload-form-element-input" placeholder="">
+      <app-validate-helper class="error-message" [name]='uploadSongForm.controls["imageFile"]'></app-validate-helper>
+    </div>
+
+    <div class="upload-form-element">
+      <span class="upload-form-element-text-second">Song:</span>
+      <input type="file" formControlName='songFile' accept=".mp3,audio/*" (change)='handleSongFile($event.target.files)'
+        class="upload-form-element-input" placeholder="">
+      <app-validate-helper class="error-message" [name]='uploadSongForm.controls["songFile"]'></app-validate-helper>
+    </div>
+    <button class="upload-form-submit-btn" type="submit">Upload</button>
+  </div>
+
+</form>
+
+</section>

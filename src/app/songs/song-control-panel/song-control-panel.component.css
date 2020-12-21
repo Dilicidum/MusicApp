@@ -1,0 +1,128 @@
+.panel-song{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+}
+
+.panel-song-range{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.panel-song-range-input{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+  height: 3vh;
+  box-shadow: 0 0 10px #6495ED;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: white;
+}
+
+
+.panel-song-other{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.btn-group{
+  flex-grow: 1;
+}
+
+.panel-song-control,.panel-song-info,.panel-song-additional{
+  display: flex;
+  padding-top: 15px;
+  background-color: white;
+  padding-bottom: 15px;
+  width: 50vh;
+}
+
+
+.panel-song-info{
+  justify-content: center;
+  margin-left: 13.9vh;
+
+}
+
+.panel-song-info-centrize{
+  border-bottom: 1px solid #f5f5f5;
+  background-color: white;
+  display: flex;
+  height: 12vh;
+  width: 50vh;
+}
+
+
+
+.fa-step-backward,.fa-step-forward { font-size: 2em; }
+
+.fa-play,.fa-pause { font-size: 3em; }
+
+.panel-song-info-cover{
+  display: flex;
+  margin-right: 2vh;
+  width: 14vh;
+}
+
+.panel-song-info-cover-file{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.panel-song-info-other-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.list-group{
+  box-shadow: 0 0 10px #6495ED;
+  border-radius: 5px;
+  width: 35vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.list-group-item{
+  display: flex;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.panel-song-control-play-previous,.panel-song-control-play-current,.panel-song-control-play-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.panel-song-control-play-current{
+  width: 20vh;
+}
+
+.panel-song-control-play-previous,.panel-song-control-play-next{
+  width:  12vh;
+}

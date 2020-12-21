@@ -1,0 +1,20 @@
+<section class = "song-card" >
+  <section class = "song-card-body" *ngIf='this.song.coverUrl' (click)='playSong(this.song.track)'>
+    <img [src]='song.coverUrl '
+    class="song-card-image" >
+  </section>
+  <section class="song-card-info">
+    <section class="song-card-song-name">
+      <span class="song-card-text">{{song.name}}</span>
+    </section>
+    <section class="song-card-song-detail-info">
+      <span class="song-card-text"><a>Anacondaz</a></span>
+      <span class="song-card-text">{{song.views}} views</span>
+    </section>
+  </section>
+
+</section>
+
+<template #songControlPanel>
+
+</template>

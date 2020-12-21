@@ -1,0 +1,17 @@
+<section class="body">
+  <header class="header">Music Streaming App</header>
+
+  <form [formGroup]='uploadAvatarForm' class="item" >
+    <input type="file" #uploadAvatar hidden accept="image/*" (change)='onSubmitUploadPhoto($event.target.files)' formControlName='avatar'>
+    <a class="item-text"  (click)='uploadPhoto()' >Upload Photo</a>
+  </form>
+
+  <div class="item" (click)='deleteCurrentAvatar()'>
+    <a class="item-text" >Delete Current Photo</a>
+  </div>
+
+  <div class="item" (click)='close()'>
+    <a  class="item-text">Cancel</a>
+  </div>
+
+</section>
